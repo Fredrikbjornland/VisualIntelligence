@@ -1,0 +1,896 @@
+we are running from this directory: /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence
+ the name of the job is: yolov5 rdd
+The job ID is 14844876
+The job was run on these nodes: idun-06-17
+Number of nodes: 1
+We are using 1 cores
+We are using 1 cores per node
+Total of 1 cores
+load anaconda
+anaconda loaded
+
+     active environment : base
+    active env location : /cluster/apps/eb/software/Anaconda3/2020.07
+            shell level : 1
+       user config file : /cluster/home/jfbjornl/.condarc
+ populated config files : 
+          conda version : 4.8.3
+    conda-build version : 3.18.11
+         python version : 3.8.3.final.0
+       virtual packages : __cuda=11.6
+                          __glibc=2.28
+       base environment : /cluster/apps/eb/software/Anaconda3/2020.07  (read only)
+           channel URLs : https://repo.anaconda.com/pkgs/main/linux-64
+                          https://repo.anaconda.com/pkgs/main/noarch
+                          https://repo.anaconda.com/pkgs/r/linux-64
+                          https://repo.anaconda.com/pkgs/r/noarch
+          package cache : /cluster/apps/eb/software/Anaconda3/2020.07/pkgs
+                          /cluster/home/jfbjornl/.conda/pkgs
+       envs directories : /cluster/home/jfbjornl/.conda/envs
+                          /cluster/apps/eb/software/Anaconda3/2020.07/envs
+               platform : linux-64
+             user-agent : conda/4.8.3 requests/2.24.0 CPython/3.8.3 Linux/4.18.0-348.el8.0.2.x86_64 rocky/8.5 glibc/2.28
+                UID:GID : 1267088:13401
+             netrc file : None
+           offline mode : False
+
+# conda environments:
+#
+base                  *  /cluster/apps/eb/software/Anaconda3/2020.07
+jukebox                  /cluster/apps/eb/software/Anaconda3/2020.07/envs/jukebox
+picrust2                 /cluster/apps/eb/software/Anaconda3/2020.07/envs/picrust2
+condaenv                 /cluster/home/jfbjornl/.conda/envs/condaenv
+visualenv                /cluster/home/jfbjornl/.conda/envs/visualenv
+
+activate
+
+     active environment : condaenv
+    active env location : /cluster/home/jfbjornl/.conda/envs/condaenv
+            shell level : 2
+       user config file : /cluster/home/jfbjornl/.condarc
+ populated config files : 
+          conda version : 4.8.3
+    conda-build version : 3.18.11
+         python version : 3.8.3.final.0
+       virtual packages : __cuda=11.6
+                          __glibc=2.28
+       base environment : /cluster/apps/eb/software/Anaconda3/2020.07  (read only)
+           channel URLs : https://repo.anaconda.com/pkgs/main/linux-64
+                          https://repo.anaconda.com/pkgs/main/noarch
+                          https://repo.anaconda.com/pkgs/r/linux-64
+                          https://repo.anaconda.com/pkgs/r/noarch
+          package cache : /cluster/apps/eb/software/Anaconda3/2020.07/pkgs
+                          /cluster/home/jfbjornl/.conda/pkgs
+       envs directories : /cluster/home/jfbjornl/.conda/envs
+                          /cluster/apps/eb/software/Anaconda3/2020.07/envs
+               platform : linux-64
+             user-agent : conda/4.8.3 requests/2.24.0 CPython/3.8.3 Linux/4.18.0-348.el8.0.2.x86_64 rocky/8.5 glibc/2.28
+                UID:GID : 1267088:13401
+             netrc file : None
+           offline mode : False
+
+[34m[1mdetect: [0mweights=['runs/train/yolo_road_damage_detection7/weights/best.pt'], source=../images/test/, data=data/coco128.yaml, imgsz=[640, 640], conf_thres=0.25, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=True, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=runs/detect, name=yolo_road_damage, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
+YOLOv5 🚀 v7.0-4-g7398d2d Python-3.9.15 torch-1.13.0+cu117 CUDA:0 (NVIDIA A100-PCIE-40GB, 40354MiB)
+
+Fusing layers... 
+YOLOv5s summary: 157 layers, 7020913 parameters, 0 gradients, 15.8 GFLOPs
+image 1/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000007.jpg: 352x640 (no detections), 15.8ms
+image 2/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000028.jpg: 384x640 13 D00s, 14.9ms
+image 3/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000034.jpg: 352x640 (no detections), 10.6ms
+image 4/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000039.jpg: 352x640 (no detections), 10.0ms
+image 5/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000044.jpg: 384x640 1 D00, 1 D10, 10.6ms
+image 6/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000045.jpg: 384x640 1 D10, 10.2ms
+image 7/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000058.jpg: 352x640 (no detections), 10.5ms
+image 8/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000074.jpg: 384x640 12 D00s, 1 D10, 3 D20s, 1 D40, 10.6ms
+image 9/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000079.jpg: 384x640 3 D00s, 10.1ms
+image 10/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000090.jpg: 352x640 3 D00s, 10.5ms
+image 11/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000098.jpg: 384x640 (no detections), 10.6ms
+image 12/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000099.jpg: 384x640 4 D00s, 10.1ms
+image 13/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000101.jpg: 384x640 2 D00s, 10.1ms
+image 14/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000103.jpg: 384x640 1 D00, 10.1ms
+image 15/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000116.jpg: 352x640 (no detections), 10.5ms
+image 16/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000134.jpg: 384x640 1 D10, 10.6ms
+image 17/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000147.jpg: 384x640 1 D00, 10.1ms
+image 18/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000161.jpg: 352x640 (no detections), 10.5ms
+image 19/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000169.jpg: 352x640 (no detections), 10.1ms
+image 20/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000201.jpg: 384x640 (no detections), 10.6ms
+image 21/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000203.jpg: 352x640 (no detections), 10.6ms
+image 22/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000218.jpg: 384x640 2 D00s, 10.5ms
+image 23/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000231.jpg: 352x640 (no detections), 10.5ms
+image 24/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000254.jpg: 352x640 (no detections), 10.1ms
+image 25/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000276.jpg: 384x640 (no detections), 10.6ms
+image 26/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000285.jpg: 384x640 1 D00, 10.1ms
+image 27/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000288.jpg: 384x640 1 D00, 10.1ms
+image 28/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000299.jpg: 384x640 11 D00s, 1 D10, 10.1ms
+image 29/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000305.jpg: 352x640 (no detections), 10.6ms
+image 30/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000308.jpg: 384x640 1 D00, 10.6ms
+image 31/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000314.jpg: 352x640 (no detections), 10.5ms
+image 32/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000321.jpg: 352x640 (no detections), 10.2ms
+image 33/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000325.jpg: 384x640 (no detections), 10.6ms
+image 34/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000331.jpg: 352x640 (no detections), 10.5ms
+image 35/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000342.jpg: 352x640 (no detections), 10.0ms
+image 36/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000343.jpg: 352x640 (no detections), 10.1ms
+image 37/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000368.jpg: 352x640 (no detections), 10.0ms
+image 38/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000386.jpg: 384x640 2 D00s, 10.6ms
+image 39/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000389.jpg: 352x640 (no detections), 10.6ms
+image 40/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000394.jpg: 384x640 6 D00s, 10.5ms
+image 41/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000407.jpg: 352x640 (no detections), 10.8ms
+image 42/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000438.jpg: 352x640 (no detections), 10.0ms
+image 43/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000444.jpg: 352x640 (no detections), 10.1ms
+image 44/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000470.jpg: 384x640 (no detections), 10.6ms
+image 45/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000473.jpg: 352x640 (no detections), 10.6ms
+image 46/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000481.jpg: 384x640 (no detections), 10.6ms
+image 47/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000496.jpg: 384x640 1 D10, 10.1ms
+image 48/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000503.jpg: 384x640 (no detections), 10.1ms
+image 49/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000509.jpg: 384x640 1 D00, 10.1ms
+image 50/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000513.jpg: 352x640 (no detections), 10.5ms
+image 51/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000517.jpg: 352x640 (no detections), 10.1ms
+image 52/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000536.jpg: 384x640 (no detections), 10.6ms
+image 53/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000538.jpg: 352x640 (no detections), 13.2ms
+image 54/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000543.jpg: 384x640 (no detections), 10.6ms
+image 55/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000545.jpg: 384x640 7 D00s, 10.1ms
+image 56/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000553.jpg: 384x640 2 D00s, 1 D10, 10.1ms
+image 57/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000554.jpg: 352x640 (no detections), 10.5ms
+image 58/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000555.jpg: 384x640 11 D00s, 10.5ms
+image 59/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000559.jpg: 352x640 (no detections), 10.5ms
+image 60/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000569.jpg: 352x640 (no detections), 10.0ms
+image 61/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000573.jpg: 352x640 2 D00s, 1 D10, 10.1ms
+image 62/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000574.jpg: 384x640 2 D00s, 10.5ms
+image 63/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000587.jpg: 384x640 1 D00, 10.1ms
+image 64/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000589.jpg: 352x640 (no detections), 10.5ms
+image 65/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000592.jpg: 352x640 (no detections), 10.0ms
+image 66/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000605.jpg: 352x640 (no detections), 10.1ms
+image 67/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000608.jpg: 352x640 (no detections), 10.0ms
+image 68/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000634.jpg: 352x640 (no detections), 10.1ms
+image 69/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000642.jpg: 352x640 (no detections), 10.1ms
+image 70/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000650.jpg: 352x640 (no detections), 10.1ms
+image 71/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000654.jpg: 352x640 1 D00, 10.1ms
+image 72/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000664.jpg: 352x640 (no detections), 10.1ms
+image 73/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000669.jpg: 352x640 (no detections), 10.1ms
+image 74/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000687.jpg: 352x640 (no detections), 10.1ms
+image 75/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000702.jpg: 384x640 8 D00s, 10.6ms
+image 76/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000705.jpg: 384x640 (no detections), 10.1ms
+image 77/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000712.jpg: 384x640 5 D00s, 10.1ms
+image 78/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000716.jpg: 352x640 (no detections), 10.5ms
+image 79/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000717.jpg: 352x640 (no detections), 10.1ms
+image 80/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000718.jpg: 352x640 (no detections), 10.0ms
+image 81/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000724.jpg: 352x640 (no detections), 10.4ms
+image 82/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000729.jpg: 384x640 (no detections), 10.6ms
+image 83/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000730.jpg: 352x640 (no detections), 10.5ms
+image 84/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000751.jpg: 384x640 (no detections), 10.5ms
+image 85/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000758.jpg: 384x640 2 D00s, 10.1ms
+image 86/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000761.jpg: 384x640 (no detections), 10.1ms
+image 87/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000767.jpg: 384x640 2 D00s, 10.1ms
+image 88/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000783.jpg: 352x640 (no detections), 10.5ms
+image 89/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000784.jpg: 352x640 (no detections), 10.0ms
+image 90/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000787.jpg: 352x640 (no detections), 10.1ms
+image 91/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000793.jpg: 384x640 (no detections), 10.6ms
+image 92/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000802.jpg: 352x640 (no detections), 10.5ms
+image 93/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000813.jpg: 384x640 (no detections), 10.6ms
+image 94/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000822.jpg: 384x640 1 D10, 10.1ms
+image 95/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000823.jpg: 352x640 1 D00, 1 D40, 10.5ms
+image 96/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000847.jpg: 352x640 (no detections), 10.0ms
+image 97/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000859.jpg: 384x640 1 D20, 10.6ms
+image 98/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000863.jpg: 352x640 (no detections), 10.5ms
+image 99/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000906.jpg: 384x640 (no detections), 10.6ms
+image 100/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000925.jpg: 384x640 (no detections), 10.1ms
+image 101/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000927.jpg: 352x640 (no detections), 10.5ms
+image 102/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000951.jpg: 384x640 3 D00s, 10.6ms
+image 103/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000958.jpg: 384x640 2 D00s, 10.1ms
+image 104/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000963.jpg: 352x640 (no detections), 10.7ms
+image 105/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000975.jpg: 352x640 (no detections), 10.1ms
+image 106/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000982.jpg: 352x640 (no detections), 10.0ms
+image 107/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_000994.jpg: 384x640 2 D00s, 1 D20, 10.6ms
+image 108/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001038.jpg: 352x640 (no detections), 14.3ms
+image 109/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001051.jpg: 384x640 2 D00s, 10.6ms
+image 110/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001060.jpg: 384x640 3 D00s, 2 D10s, 10.1ms
+image 111/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001070.jpg: 352x640 (no detections), 10.5ms
+image 112/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001071.jpg: 384x640 (no detections), 10.6ms
+image 113/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001073.jpg: 384x640 (no detections), 10.1ms
+image 114/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001075.jpg: 384x640 (no detections), 10.1ms
+image 115/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001090.jpg: 352x640 (no detections), 10.5ms
+image 116/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001098.jpg: 384x640 1 D00, 10.6ms
+image 117/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001102.jpg: 384x640 1 D10, 10.2ms
+image 118/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001103.jpg: 384x640 (no detections), 10.2ms
+image 119/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001104.jpg: 384x640 (no detections), 10.1ms
+image 120/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001123.jpg: 384x640 12 D00s, 1 D10, 1 D20, 10.2ms
+image 121/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001132.jpg: 384x640 (no detections), 10.1ms
+image 122/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001155.jpg: 384x640 (no detections), 10.2ms
+image 123/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001159.jpg: 352x640 1 D00, 10.5ms
+image 124/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001169.jpg: 384x640 2 D00s, 10.6ms
+image 125/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001172.jpg: 352x640 (no detections), 10.5ms
+image 126/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001177.jpg: 384x640 (no detections), 10.5ms
+image 127/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001190.jpg: 384x640 4 D00s, 10.1ms
+image 128/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001197.jpg: 352x640 1 D00, 10.5ms
+image 129/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001198.jpg: 352x640 (no detections), 10.0ms
+image 130/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001206.jpg: 352x640 (no detections), 10.0ms
+image 131/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001216.jpg: 352x640 (no detections), 10.0ms
+image 132/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001217.jpg: 384x640 1 D00, 10.5ms
+image 133/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001221.jpg: 384x640 (no detections), 10.2ms
+image 134/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001225.jpg: 384x640 6 D00s, 10.1ms
+image 135/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001227.jpg: 384x640 (no detections), 10.1ms
+image 136/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001233.jpg: 352x640 (no detections), 10.5ms
+image 137/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001242.jpg: 384x640 4 D00s, 10.5ms
+image 138/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001262.jpg: 384x640 (no detections), 10.1ms
+image 139/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001264.jpg: 384x640 (no detections), 10.4ms
+image 140/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001282.jpg: 352x640 (no detections), 10.5ms
+image 141/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001287.jpg: 384x640 (no detections), 10.6ms
+image 142/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001289.jpg: 384x640 (no detections), 10.1ms
+image 143/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001299.jpg: 384x640 1 D00, 10.1ms
+image 144/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001305.jpg: 384x640 (no detections), 10.1ms
+image 145/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001307.jpg: 352x640 (no detections), 10.5ms
+image 146/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001322.jpg: 352x640 (no detections), 10.0ms
+image 147/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001326.jpg: 352x640 (no detections), 10.1ms
+image 148/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001331.jpg: 384x640 2 D00s, 10.6ms
+image 149/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001347.jpg: 384x640 (no detections), 10.1ms
+image 150/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001373.jpg: 384x640 (no detections), 10.1ms
+image 151/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001380.jpg: 384x640 1 D00, 10.1ms
+image 152/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001392.jpg: 352x640 (no detections), 10.8ms
+image 153/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001406.jpg: 352x640 (no detections), 10.0ms
+image 154/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001410.jpg: 384x640 (no detections), 10.5ms
+image 155/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001422.jpg: 384x640 1 D00, 2 D20s, 10.1ms
+image 156/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001447.jpg: 352x640 (no detections), 11.5ms
+image 157/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001458.jpg: 384x640 (no detections), 10.6ms
+image 158/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001463.jpg: 352x640 (no detections), 10.5ms
+image 159/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001475.jpg: 384x640 3 D00s, 1 D10, 11.0ms
+image 160/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001494.jpg: 384x640 5 D00s, 10.1ms
+image 161/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001506.jpg: 352x640 (no detections), 10.8ms
+image 162/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001508.jpg: 352x640 (no detections), 10.0ms
+image 163/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001515.jpg: 352x640 (no detections), 10.1ms
+image 164/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001519.jpg: 384x640 5 D00s, 10.6ms
+image 165/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001520.jpg: 352x640 (no detections), 10.5ms
+image 166/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001532.jpg: 352x640 (no detections), 10.0ms
+image 167/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001534.jpg: 352x640 (no detections), 10.1ms
+image 168/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001537.jpg: 352x640 (no detections), 10.0ms
+image 169/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001550.jpg: 384x640 2 D00s, 10.6ms
+image 170/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001570.jpg: 384x640 (no detections), 10.1ms
+image 171/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001576.jpg: 384x640 2 D00s, 10.2ms
+image 172/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001586.jpg: 384x640 1 D10, 10.2ms
+image 173/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001600.jpg: 384x640 (no detections), 10.4ms
+image 174/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001604.jpg: 384x640 (no detections), 10.4ms
+image 175/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001620.jpg: 384x640 1 D00, 10.1ms
+image 176/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001651.jpg: 384x640 (no detections), 10.1ms
+image 177/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001652.jpg: 352x640 (no detections), 10.5ms
+image 178/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001653.jpg: 384x640 9 D00s, 1 D10, 10.6ms
+image 179/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001657.jpg: 352x640 1 D00, 10.5ms
+image 180/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001664.jpg: 352x640 (no detections), 10.0ms
+image 181/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001681.jpg: 384x640 (no detections), 10.6ms
+image 182/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001683.jpg: 384x640 (no detections), 10.1ms
+image 183/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001684.jpg: 384x640 1 D00, 10.1ms
+image 184/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001685.jpg: 352x640 (no detections), 10.5ms
+image 185/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001686.jpg: 352x640 (no detections), 10.0ms
+image 186/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001690.jpg: 384x640 (no detections), 10.6ms
+image 187/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001691.jpg: 352x640 (no detections), 10.5ms
+image 188/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001692.jpg: 352x640 (no detections), 10.0ms
+image 189/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001714.jpg: 384x640 (no detections), 10.5ms
+image 190/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001717.jpg: 352x640 (no detections), 10.5ms
+image 191/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001736.jpg: 352x640 (no detections), 10.0ms
+image 192/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001740.jpg: 384x640 2 D00s, 10.6ms
+image 193/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001745.jpg: 352x640 (no detections), 10.5ms
+image 194/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001748.jpg: 352x640 (no detections), 10.0ms
+image 195/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001758.jpg: 384x640 3 D00s, 10.7ms
+image 196/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001790.jpg: 384x640 (no detections), 10.7ms
+image 197/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001814.jpg: 384x640 (no detections), 10.2ms
+image 198/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001851.jpg: 352x640 (no detections), 10.6ms
+image 199/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001854.jpg: 384x640 (no detections), 10.6ms
+image 200/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001855.jpg: 384x640 (no detections), 10.1ms
+image 201/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001857.jpg: 384x640 (no detections), 10.1ms
+image 202/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001885.jpg: 384x640 2 D00s, 1 D10, 10.1ms
+image 203/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001892.jpg: 352x640 2 D10s, 10.5ms
+image 204/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001909.jpg: 352x640 (no detections), 10.0ms
+image 205/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001921.jpg: 384x640 2 D00s, 10.6ms
+image 206/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001929.jpg: 384x640 1 D00, 10.1ms
+image 207/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001939.jpg: 352x640 (no detections), 10.5ms
+image 208/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001945.jpg: 352x640 3 D00s, 10.1ms
+image 209/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001947.jpg: 352x640 (no detections), 10.0ms
+image 210/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001954.jpg: 352x640 (no detections), 10.1ms
+image 211/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001956.jpg: 384x640 (no detections), 10.6ms
+image 212/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001989.jpg: 352x640 (no detections), 10.5ms
+image 213/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_001993.jpg: 352x640 (no detections), 10.0ms
+image 214/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002000.jpg: 384x640 1 D00, 10.6ms
+image 215/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002004.jpg: 384x640 18 D00s, 5 D10s, 10.1ms
+image 216/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002008.jpg: 384x640 (no detections), 10.1ms
+image 217/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002012.jpg: 352x640 (no detections), 10.5ms
+image 218/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002031.jpg: 352x640 1 D20, 10.0ms
+image 219/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002064.jpg: 384x640 5 D00s, 1 D10, 10.6ms
+image 220/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002065.jpg: 384x640 (no detections), 10.1ms
+image 221/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002076.jpg: 384x640 1 D00, 10.1ms
+image 222/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002090.jpg: 352x640 (no detections), 10.5ms
+image 223/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002106.jpg: 384x640 (no detections), 10.6ms
+image 224/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002119.jpg: 352x640 (no detections), 10.5ms
+image 225/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002140.jpg: 384x640 (no detections), 10.5ms
+image 226/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002165.jpg: 384x640 (no detections), 10.1ms
+image 227/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002168.jpg: 352x640 (no detections), 10.5ms
+image 228/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002174.jpg: 384x640 1 D00, 10.6ms
+image 229/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002179.jpg: 352x640 (no detections), 10.6ms
+image 230/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002188.jpg: 352x640 (no detections), 10.1ms
+image 231/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002192.jpg: 384x640 1 D40, 10.5ms
+image 232/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002196.jpg: 352x640 (no detections), 10.5ms
+image 233/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002198.jpg: 384x640 9 D00s, 10.5ms
+image 234/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002209.jpg: 352x640 (no detections), 10.5ms
+image 235/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002217.jpg: 384x640 (no detections), 10.5ms
+image 236/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002243.jpg: 384x640 3 D00s, 1 D10, 10.1ms
+image 237/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002252.jpg: 384x640 (no detections), 10.2ms
+image 238/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002255.jpg: 352x640 (no detections), 10.6ms
+image 239/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002298.jpg: 384x640 (no detections), 10.5ms
+image 240/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002305.jpg: 352x640 (no detections), 10.5ms
+image 241/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002333.jpg: 384x640 1 D40, 10.5ms
+image 242/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002353.jpg: 384x640 1 D00, 10.1ms
+image 243/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002362.jpg: 352x640 (no detections), 10.5ms
+image 244/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002385.jpg: 352x640 (no detections), 10.0ms
+image 245/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002389.jpg: 352x640 (no detections), 10.0ms
+image 246/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002394.jpg: 352x640 (no detections), 10.1ms
+image 247/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002401.jpg: 352x640 (no detections), 10.1ms
+image 248/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002407.jpg: 384x640 1 D00, 10.6ms
+image 249/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002418.jpg: 352x640 (no detections), 10.5ms
+image 250/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002421.jpg: 384x640 1 D00, 10.6ms
+image 251/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002434.jpg: 384x640 1 D00, 10.1ms
+image 252/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002435.jpg: 384x640 2 D00s, 10.1ms
+image 253/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002438.jpg: 352x640 (no detections), 10.5ms
+image 254/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002441.jpg: 384x640 (no detections), 10.5ms
+image 255/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002443.jpg: 352x640 (no detections), 10.4ms
+image 256/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002458.jpg: 384x640 (no detections), 10.5ms
+image 257/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002472.jpg: 384x640 (no detections), 10.1ms
+image 258/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002505.jpg: 352x640 (no detections), 10.5ms
+image 259/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002517.jpg: 384x640 (no detections), 10.6ms
+image 260/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002520.jpg: 384x640 (no detections), 10.1ms
+image 261/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002567.jpg: 352x640 (no detections), 10.5ms
+image 262/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002570.jpg: 352x640 (no detections), 10.1ms
+image 263/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002575.jpg: 384x640 9 D00s, 10.5ms
+image 264/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002582.jpg: 384x640 1 D00, 10.1ms
+image 265/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002584.jpg: 352x640 (no detections), 10.5ms
+image 266/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002586.jpg: 352x640 (no detections), 10.0ms
+image 267/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002603.jpg: 384x640 1 D00, 10.5ms
+image 268/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002606.jpg: 352x640 (no detections), 10.5ms
+image 269/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002653.jpg: 384x640 (no detections), 10.6ms
+image 270/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002661.jpg: 352x640 (no detections), 10.5ms
+image 271/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002670.jpg: 352x640 2 D00s, 1 D10, 10.0ms
+image 272/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002677.jpg: 352x640 (no detections), 10.1ms
+image 273/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002680.jpg: 384x640 9 D00s, 2 D10s, 10.6ms
+image 274/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002689.jpg: 352x640 (no detections), 10.5ms
+image 275/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002692.jpg: 384x640 1 D00, 10.5ms
+image 276/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002712.jpg: 384x640 (no detections), 10.1ms
+image 277/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002717.jpg: 352x640 (no detections), 10.5ms
+image 278/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002735.jpg: 384x640 1 D00, 10.6ms
+image 279/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002773.jpg: 352x640 (no detections), 10.5ms
+image 280/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002776.jpg: 352x640 (no detections), 10.0ms
+image 281/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002803.jpg: 384x640 (no detections), 10.6ms
+image 282/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002812.jpg: 384x640 8 D00s, 2 D10s, 10.1ms
+image 283/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002819.jpg: 352x640 (no detections), 10.5ms
+image 284/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002820.jpg: 384x640 (no detections), 10.6ms
+image 285/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002837.jpg: 384x640 (no detections), 10.1ms
+image 286/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002842.jpg: 384x640 (no detections), 10.1ms
+image 287/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002874.jpg: 384x640 (no detections), 10.1ms
+image 288/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002885.jpg: 384x640 (no detections), 10.1ms
+image 289/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002901.jpg: 352x640 (no detections), 10.5ms
+image 290/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002903.jpg: 384x640 2 D00s, 10.6ms
+image 291/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002907.jpg: 384x640 (no detections), 10.1ms
+image 292/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002917.jpg: 352x640 1 D40, 10.5ms
+image 293/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002918.jpg: 384x640 3 D00s, 10.5ms
+image 294/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002927.jpg: 384x640 2 D00s, 10.1ms
+image 295/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002940.jpg: 384x640 (no detections), 10.1ms
+image 296/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002947.jpg: 384x640 4 D00s, 10.1ms
+image 297/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002968.jpg: 352x640 1 D00, 10.5ms
+image 298/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002973.jpg: 384x640 1 D00, 10.6ms
+image 299/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002975.jpg: 384x640 1 D10, 10.1ms
+image 300/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002978.jpg: 352x640 (no detections), 10.5ms
+image 301/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002983.jpg: 352x640 (no detections), 10.0ms
+image 302/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002984.jpg: 352x640 (no detections), 10.1ms
+image 303/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002989.jpg: 384x640 (no detections), 10.6ms
+image 304/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002990.jpg: 384x640 1 D10, 10.1ms
+image 305/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_002992.jpg: 384x640 7 D00s, 10.1ms
+image 306/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003001.jpg: 384x640 (no detections), 10.1ms
+image 307/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003014.jpg: 352x640 (no detections), 10.5ms
+image 308/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003032.jpg: 384x640 3 D00s, 10.6ms
+image 309/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003085.jpg: 384x640 (no detections), 10.1ms
+image 310/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003091.jpg: 384x640 3 D00s, 10.1ms
+image 311/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003092.jpg: 384x640 6 D00s, 10.1ms
+image 312/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003127.jpg: 384x640 (no detections), 10.1ms
+image 313/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003157.jpg: 384x640 (no detections), 10.1ms
+image 314/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003178.jpg: 352x640 (no detections), 10.5ms
+image 315/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003186.jpg: 352x640 (no detections), 10.0ms
+image 316/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003187.jpg: 352x640 (no detections), 10.0ms
+image 317/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003189.jpg: 352x640 (no detections), 10.0ms
+image 318/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003210.jpg: 384x640 (no detections), 10.6ms
+image 319/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003223.jpg: 384x640 (no detections), 10.1ms
+image 320/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003234.jpg: 352x640 (no detections), 10.5ms
+image 321/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003272.jpg: 384x640 2 D00s, 10.5ms
+image 322/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003296.jpg: 384x640 (no detections), 10.1ms
+image 323/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003332.jpg: 352x640 (no detections), 10.6ms
+image 324/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003350.jpg: 352x640 (no detections), 10.1ms
+image 325/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003353.jpg: 352x640 (no detections), 10.0ms
+image 326/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003354.jpg: 384x640 (no detections), 10.6ms
+image 327/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003359.jpg: 384x640 2 D00s, 10.1ms
+image 328/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003375.jpg: 384x640 8 D00s, 10.2ms
+image 329/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003376.jpg: 384x640 3 D00s, 10.1ms
+image 330/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003391.jpg: 352x640 (no detections), 10.5ms
+image 331/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003404.jpg: 352x640 (no detections), 10.1ms
+image 332/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003417.jpg: 384x640 (no detections), 10.5ms
+image 333/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003420.jpg: 384x640 (no detections), 10.1ms
+image 334/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003426.jpg: 352x640 (no detections), 10.5ms
+image 335/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003427.jpg: 352x640 (no detections), 10.0ms
+image 336/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003431.jpg: 384x640 (no detections), 10.6ms
+image 337/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003448.jpg: 384x640 2 D00s, 10.1ms
+image 338/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003458.jpg: 352x640 (no detections), 10.5ms
+image 339/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003480.jpg: 384x640 (no detections), 10.5ms
+image 340/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003486.jpg: 384x640 3 D00s, 10.1ms
+image 341/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003500.jpg: 352x640 (no detections), 10.5ms
+image 342/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003505.jpg: 352x640 1 D00, 10.1ms
+image 343/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003516.jpg: 384x640 1 D00, 10.5ms
+image 344/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003521.jpg: 352x640 (no detections), 10.5ms
+image 345/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003554.jpg: 352x640 (no detections), 10.2ms
+image 346/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003568.jpg: 384x640 3 D00s, 10.5ms
+image 347/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003595.jpg: 352x640 (no detections), 10.5ms
+image 348/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003662.jpg: 384x640 1 D10, 10.5ms
+image 349/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003663.jpg: 352x640 (no detections), 10.5ms
+image 350/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003678.jpg: 384x640 1 D00, 10.9ms
+image 351/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003697.jpg: 352x640 1 D00, 10.5ms
+image 352/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003707.jpg: 384x640 7 D00s, 10.5ms
+image 353/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003722.jpg: 352x640 (no detections), 10.5ms
+image 354/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003731.jpg: 384x640 (no detections), 10.5ms
+image 355/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003738.jpg: 352x640 (no detections), 10.5ms
+image 356/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003743.jpg: 384x640 (no detections), 10.5ms
+image 357/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003747.jpg: 352x640 (no detections), 10.5ms
+image 358/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003766.jpg: 384x640 3 D00s, 10.9ms
+image 359/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003767.jpg: 384x640 1 D00, 1 D20, 10.2ms
+image 360/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003773.jpg: 352x640 (no detections), 10.5ms
+image 361/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003792.jpg: 352x640 (no detections), 10.0ms
+image 362/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003803.jpg: 384x640 1 D00, 10.6ms
+image 363/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003835.jpg: 352x640 (no detections), 10.5ms
+image 364/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003846.jpg: 352x640 (no detections), 10.0ms
+image 365/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003851.jpg: 384x640 1 D10, 10.5ms
+image 366/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003872.jpg: 352x640 (no detections), 10.5ms
+image 367/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003875.jpg: 352x640 (no detections), 10.0ms
+image 368/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003882.jpg: 384x640 2 D00s, 10.5ms
+image 369/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003886.jpg: 352x640 (no detections), 10.5ms
+image 370/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003894.jpg: 384x640 1 D00, 10.5ms
+image 371/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003901.jpg: 352x640 (no detections), 10.5ms
+image 372/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003909.jpg: 352x640 (no detections), 10.1ms
+image 373/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003913.jpg: 352x640 (no detections), 10.1ms
+image 374/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003933.jpg: 352x640 (no detections), 10.1ms
+image 375/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003945.jpg: 384x640 4 D00s, 10.6ms
+image 376/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003946.jpg: 352x640 (no detections), 10.5ms
+image 377/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003979.jpg: 352x640 1 D00, 10.0ms
+image 378/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003984.jpg: 384x640 (no detections), 10.6ms
+image 379/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003991.jpg: 384x640 2 D00s, 1 D10, 10.1ms
+image 380/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003993.jpg: 352x640 (no detections), 10.5ms
+image 381/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_003999.jpg: 384x640 (no detections), 10.5ms
+image 382/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004015.jpg: 352x640 (no detections), 10.5ms
+image 383/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004030.jpg: 384x640 (no detections), 10.6ms
+image 384/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004050.jpg: 384x640 6 D00s, 10.1ms
+image 385/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004060.jpg: 352x640 (no detections), 10.5ms
+image 386/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004071.jpg: 352x640 (no detections), 10.0ms
+image 387/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004092.jpg: 384x640 6 D00s, 1 D10, 10.5ms
+image 388/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004096.jpg: 352x640 (no detections), 10.5ms
+image 389/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004097.jpg: 384x640 1 D00, 10.6ms
+image 390/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004106.jpg: 384x640 11 D00s, 1 D10, 10.1ms
+image 391/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004124.jpg: 352x640 1 D00, 10.5ms
+image 392/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004128.jpg: 384x640 (no detections), 10.5ms
+image 393/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004141.jpg: 352x640 (no detections), 10.9ms
+image 394/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004143.jpg: 384x640 (no detections), 10.6ms
+image 395/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004148.jpg: 352x640 (no detections), 10.5ms
+image 396/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004150.jpg: 384x640 (no detections), 10.6ms
+image 397/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004157.jpg: 384x640 (no detections), 10.1ms
+image 398/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004158.jpg: 384x640 1 D00, 10.1ms
+image 399/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004167.jpg: 352x640 (no detections), 10.5ms
+image 400/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004178.jpg: 352x640 (no detections), 10.0ms
+image 401/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004192.jpg: 384x640 1 D00, 10.5ms
+image 402/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004195.jpg: 352x640 (no detections), 10.8ms
+image 403/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004203.jpg: 352x640 (no detections), 10.0ms
+image 404/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004207.jpg: 352x640 (no detections), 10.1ms
+image 405/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004220.jpg: 352x640 (no detections), 10.1ms
+image 406/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004224.jpg: 384x640 2 D00s, 10.5ms
+image 407/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004239.jpg: 352x640 (no detections), 10.4ms
+image 408/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004250.jpg: 352x640 (no detections), 10.0ms
+image 409/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004277.jpg: 352x640 (no detections), 10.1ms
+image 410/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004300.jpg: 384x640 1 D00, 10.6ms
+image 411/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004304.jpg: 352x640 (no detections), 10.5ms
+image 412/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004322.jpg: 384x640 3 D00s, 10.5ms
+image 413/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004326.jpg: 384x640 5 D00s, 10.1ms
+image 414/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004327.jpg: 384x640 (no detections), 10.1ms
+image 415/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004341.jpg: 384x640 1 D10, 10.1ms
+image 416/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004346.jpg: 352x640 (no detections), 11.5ms
+image 417/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004354.jpg: 384x640 1 D00, 10.6ms
+image 418/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004360.jpg: 384x640 (no detections), 10.4ms
+image 419/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004364.jpg: 384x640 (no detections), 10.1ms
+image 420/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004365.jpg: 352x640 (no detections), 10.5ms
+image 421/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004371.jpg: 352x640 (no detections), 10.0ms
+image 422/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004396.jpg: 352x640 (no detections), 9.9ms
+image 423/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004400.jpg: 352x640 (no detections), 10.0ms
+image 424/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004413.jpg: 352x640 (no detections), 10.1ms
+image 425/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004421.jpg: 352x640 (no detections), 10.0ms
+image 426/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004424.jpg: 384x640 (no detections), 10.6ms
+image 427/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004434.jpg: 352x640 (no detections), 10.8ms
+image 428/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004444.jpg: 352x640 1 D00, 10.1ms
+image 429/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004446.jpg: 352x640 1 D00, 10.0ms
+image 430/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004461.jpg: 352x640 (no detections), 10.0ms
+image 431/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004474.jpg: 352x640 (no detections), 10.1ms
+image 432/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004481.jpg: 352x640 (no detections), 10.2ms
+image 433/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004489.jpg: 352x640 (no detections), 10.1ms
+image 434/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004497.jpg: 352x640 (no detections), 10.1ms
+image 435/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004510.jpg: 352x640 (no detections), 10.1ms
+image 436/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004516.jpg: 352x640 (no detections), 10.1ms
+image 437/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004524.jpg: 384x640 (no detections), 10.8ms
+image 438/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004527.jpg: 384x640 2 D10s, 10.1ms
+image 439/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004531.jpg: 384x640 2 D00s, 10.1ms
+image 440/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004536.jpg: 352x640 (no detections), 10.5ms
+image 441/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004544.jpg: 384x640 (no detections), 10.5ms
+image 442/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004549.jpg: 352x640 (no detections), 10.4ms
+image 443/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004553.jpg: 384x640 (no detections), 10.6ms
+image 444/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004557.jpg: 352x640 (no detections), 10.4ms
+image 445/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004563.jpg: 352x640 (no detections), 10.0ms
+image 446/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004571.jpg: 384x640 2 D00s, 10.5ms
+image 447/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004583.jpg: 352x640 (no detections), 10.5ms
+image 448/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004586.jpg: 352x640 (no detections), 10.0ms
+image 449/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004621.jpg: 352x640 (no detections), 10.0ms
+image 450/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004631.jpg: 352x640 (no detections), 10.0ms
+image 451/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004638.jpg: 384x640 1 D00, 10.5ms
+image 452/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004645.jpg: 384x640 (no detections), 10.1ms
+image 453/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004647.jpg: 384x640 2 D00s, 10.1ms
+image 454/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004674.jpg: 384x640 2 D00s, 1 D20, 10.1ms
+image 455/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004691.jpg: 352x640 (no detections), 10.5ms
+image 456/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004694.jpg: 384x640 (no detections), 10.5ms
+image 457/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004702.jpg: 384x640 1 D00, 10.1ms
+image 458/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004704.jpg: 384x640 1 D00, 1 D10, 10.1ms
+image 459/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004708.jpg: 384x640 3 D00s, 10.7ms
+image 460/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004714.jpg: 384x640 2 D00s, 10.1ms
+image 461/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004728.jpg: 352x640 1 D00, 10.6ms
+image 462/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004732.jpg: 352x640 (no detections), 10.0ms
+image 463/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004744.jpg: 384x640 1 D00, 10.5ms
+image 464/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004761.jpg: 384x640 5 D00s, 10.1ms
+image 465/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004781.jpg: 384x640 (no detections), 10.1ms
+image 466/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004789.jpg: 384x640 (no detections), 10.1ms
+image 467/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004798.jpg: 352x640 (no detections), 10.4ms
+image 468/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004800.jpg: 352x640 (no detections), 10.1ms
+image 469/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004804.jpg: 352x640 (no detections), 9.9ms
+image 470/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004809.jpg: 352x640 (no detections), 10.0ms
+image 471/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004816.jpg: 352x640 (no detections), 10.1ms
+image 472/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004822.jpg: 352x640 1 D00, 10.0ms
+image 473/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004827.jpg: 352x640 (no detections), 10.1ms
+image 474/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004845.jpg: 352x640 (no detections), 10.1ms
+image 475/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004856.jpg: 384x640 1 D00, 10.6ms
+image 476/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004865.jpg: 352x640 (no detections), 10.5ms
+image 477/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004868.jpg: 384x640 1 D00, 10.5ms
+image 478/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004888.jpg: 384x640 2 D00s, 10.1ms
+image 479/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004907.jpg: 352x640 (no detections), 10.6ms
+image 480/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004909.jpg: 384x640 (no detections), 10.7ms
+image 481/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004914.jpg: 352x640 (no detections), 10.5ms
+image 482/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004919.jpg: 384x640 (no detections), 10.5ms
+image 483/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004937.jpg: 352x640 (no detections), 10.5ms
+image 484/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004960.jpg: 352x640 (no detections), 10.0ms
+image 485/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004965.jpg: 352x640 (no detections), 10.0ms
+image 486/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004976.jpg: 352x640 (no detections), 10.0ms
+image 487/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_004981.jpg: 384x640 1 D10, 10.5ms
+image 488/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005002.jpg: 352x640 (no detections), 10.5ms
+image 489/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005003.jpg: 352x640 (no detections), 10.0ms
+image 490/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005005.jpg: 384x640 (no detections), 10.5ms
+image 491/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005011.jpg: 352x640 (no detections), 10.4ms
+image 492/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005014.jpg: 352x640 (no detections), 9.9ms
+image 493/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005023.jpg: 384x640 (no detections), 10.5ms
+image 494/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005027.jpg: 384x640 (no detections), 10.1ms
+image 495/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005035.jpg: 384x640 (no detections), 10.1ms
+image 496/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005036.jpg: 352x640 (no detections), 10.5ms
+image 497/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005063.jpg: 352x640 (no detections), 9.9ms
+image 498/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005065.jpg: 352x640 (no detections), 10.0ms
+image 499/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005068.jpg: 384x640 5 D00s, 10.5ms
+image 500/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005096.jpg: 352x640 (no detections), 10.4ms
+image 501/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005102.jpg: 352x640 (no detections), 10.1ms
+image 502/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005136.jpg: 384x640 (no detections), 10.5ms
+image 503/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005150.jpg: 384x640 (no detections), 10.0ms
+image 504/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005164.jpg: 352x640 (no detections), 10.5ms
+image 505/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005174.jpg: 352x640 (no detections), 10.0ms
+image 506/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005176.jpg: 384x640 2 D00s, 10.5ms
+image 507/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005185.jpg: 352x640 (no detections), 10.4ms
+image 508/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005190.jpg: 384x640 (no detections), 10.6ms
+image 509/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005202.jpg: 352x640 (no detections), 10.5ms
+image 510/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005216.jpg: 352x640 (no detections), 10.0ms
+image 511/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005221.jpg: 384x640 2 D00s, 1 D20, 10.5ms
+image 512/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005231.jpg: 384x640 2 D00s, 10.0ms
+image 513/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005241.jpg: 384x640 (no detections), 10.1ms
+image 514/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005242.jpg: 384x640 1 D00, 8 D20s, 1 D40, 10.1ms
+image 515/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005243.jpg: 384x640 (no detections), 10.1ms
+image 516/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005247.jpg: 384x640 (no detections), 10.1ms
+image 517/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005253.jpg: 384x640 1 D20, 10.1ms
+image 518/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005266.jpg: 384x640 7 D00s, 2 D10s, 10.1ms
+image 519/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005281.jpg: 384x640 (no detections), 10.1ms
+image 520/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005291.jpg: 352x640 (no detections), 10.4ms
+image 521/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005304.jpg: 352x640 1 D00, 9.9ms
+image 522/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005308.jpg: 352x640 (no detections), 9.9ms
+image 523/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005311.jpg: 384x640 2 D00s, 10.6ms
+image 524/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005312.jpg: 352x640 (no detections), 10.4ms
+image 525/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005316.jpg: 352x640 (no detections), 9.9ms
+image 526/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005317.jpg: 352x640 (no detections), 10.0ms
+image 527/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005326.jpg: 352x640 1 D00, 9.9ms
+image 528/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005329.jpg: 352x640 (no detections), 10.0ms
+image 529/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005345.jpg: 384x640 5 D00s, 3 D20s, 10.6ms
+image 530/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005348.jpg: 384x640 (no detections), 10.0ms
+image 531/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005351.jpg: 384x640 3 D00s, 10.1ms
+image 532/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005372.jpg: 352x640 1 D00, 10.4ms
+image 533/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005377.jpg: 384x640 (no detections), 10.5ms
+image 534/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005389.jpg: 352x640 (no detections), 10.5ms
+image 535/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005412.jpg: 352x640 (no detections), 10.0ms
+image 536/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005425.jpg: 352x640 (no detections), 10.0ms
+image 537/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005430.jpg: 352x640 (no detections), 9.9ms
+image 538/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005448.jpg: 352x640 1 D00, 10.0ms
+image 539/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005451.jpg: 384x640 2 D00s, 4 D10s, 10.5ms
+image 540/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005455.jpg: 352x640 (no detections), 10.4ms
+image 541/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005468.jpg: 352x640 1 D40, 10.0ms
+image 542/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005491.jpg: 352x640 (no detections), 10.0ms
+image 543/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005494.jpg: 352x640 (no detections), 10.0ms
+image 544/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005499.jpg: 352x640 1 D00, 10.1ms
+image 545/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005503.jpg: 384x640 1 D20, 10.5ms
+image 546/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005506.jpg: 384x640 1 D00, 10.0ms
+image 547/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005509.jpg: 384x640 1 D00, 1 D10, 10.0ms
+image 548/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005517.jpg: 352x640 (no detections), 10.5ms
+image 549/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005522.jpg: 352x640 (no detections), 9.9ms
+image 550/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005546.jpg: 352x640 (no detections), 9.9ms
+image 551/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005549.jpg: 384x640 4 D00s, 10.5ms
+image 552/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005552.jpg: 352x640 (no detections), 10.4ms
+image 553/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005593.jpg: 384x640 (no detections), 10.6ms
+image 554/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005600.jpg: 352x640 2 D00s, 10.4ms
+image 555/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005607.jpg: 352x640 (no detections), 10.2ms
+image 556/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005613.jpg: 384x640 1 D00, 10.5ms
+image 557/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005616.jpg: 352x640 (no detections), 10.4ms
+image 558/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005620.jpg: 384x640 (no detections), 10.4ms
+image 559/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005621.jpg: 352x640 (no detections), 10.4ms
+image 560/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005638.jpg: 384x640 (no detections), 10.5ms
+image 561/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005674.jpg: 352x640 (no detections), 10.4ms
+image 562/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005676.jpg: 384x640 (no detections), 10.4ms
+image 563/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005689.jpg: 384x640 6 D00s, 1 D10, 10.1ms
+image 564/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005703.jpg: 352x640 (no detections), 10.4ms
+image 565/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005704.jpg: 384x640 1 D00, 1 D10, 10.5ms
+image 566/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005706.jpg: 352x640 (no detections), 10.4ms
+image 567/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005709.jpg: 384x640 (no detections), 10.5ms
+image 568/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005714.jpg: 352x640 (no detections), 10.5ms
+image 569/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005735.jpg: 384x640 1 D00, 10.4ms
+image 570/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005736.jpg: 384x640 (no detections), 10.0ms
+image 571/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005743.jpg: 384x640 1 D00, 10.1ms
+image 572/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005770.jpg: 384x640 (no detections), 10.0ms
+image 573/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005783.jpg: 384x640 (no detections), 10.0ms
+image 574/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005790.jpg: 352x640 (no detections), 10.4ms
+image 575/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005794.jpg: 384x640 3 D00s, 10.6ms
+image 576/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005796.jpg: 352x640 (no detections), 10.4ms
+image 577/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005799.jpg: 384x640 (no detections), 10.5ms
+image 578/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005802.jpg: 352x640 (no detections), 10.4ms
+image 579/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005803.jpg: 384x640 5 D00s, 10.5ms
+image 580/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005809.jpg: 352x640 (no detections), 10.4ms
+image 581/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005817.jpg: 384x640 (no detections), 10.5ms
+image 582/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005824.jpg: 352x640 (no detections), 10.4ms
+image 583/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005825.jpg: 352x640 (no detections), 9.9ms
+image 584/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005828.jpg: 384x640 1 D00, 1 D40, 10.5ms
+image 585/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005831.jpg: 384x640 1 D00, 10.0ms
+image 586/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005854.jpg: 352x640 (no detections), 10.4ms
+image 587/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005856.jpg: 384x640 1 D00, 10.5ms
+image 588/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005857.jpg: 352x640 1 D00, 10.4ms
+image 589/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005861.jpg: 384x640 2 D00s, 10.5ms
+image 590/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005865.jpg: 384x640 (no detections), 10.0ms
+image 591/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005880.jpg: 352x640 (no detections), 10.4ms
+image 592/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005888.jpg: 352x640 (no detections), 10.0ms
+image 593/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005891.jpg: 352x640 (no detections), 9.9ms
+image 594/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005892.jpg: 384x640 (no detections), 10.5ms
+image 595/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005901.jpg: 384x640 (no detections), 10.0ms
+image 596/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005905.jpg: 352x640 (no detections), 10.4ms
+image 597/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005920.jpg: 352x640 (no detections), 9.9ms
+image 598/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005922.jpg: 352x640 (no detections), 10.1ms
+image 599/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005933.jpg: 352x640 (no detections), 9.9ms
+image 600/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005955.jpg: 384x640 6 D00s, 10.4ms
+image 601/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005970.jpg: 384x640 2 D00s, 10.0ms
+image 602/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_005974.jpg: 384x640 1 D00, 10.0ms
+image 603/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006002.jpg: 384x640 2 D00s, 10.0ms
+image 604/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006005.jpg: 384x640 3 D00s, 10.0ms
+image 605/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006019.jpg: 384x640 (no detections), 10.0ms
+image 606/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006026.jpg: 352x640 (no detections), 10.7ms
+image 607/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006049.jpg: 384x640 6 D00s, 10.8ms
+image 608/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006052.jpg: 384x640 1 D00, 10.6ms
+image 609/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006056.jpg: 384x640 3 D00s, 10.1ms
+image 610/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006057.jpg: 352x640 (no detections), 10.4ms
+image 611/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006106.jpg: 384x640 2 D20s, 1 D40, 10.8ms
+image 612/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006109.jpg: 384x640 (no detections), 10.0ms
+image 613/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006117.jpg: 352x640 (no detections), 10.4ms
+image 614/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006123.jpg: 384x640 (no detections), 10.4ms
+image 615/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006128.jpg: 352x640 (no detections), 10.3ms
+image 616/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006134.jpg: 352x640 1 D00, 9.9ms
+image 617/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006136.jpg: 384x640 (no detections), 10.7ms
+image 618/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006139.jpg: 384x640 (no detections), 10.0ms
+image 619/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006158.jpg: 384x640 2 D00s, 1 D10, 10.1ms
+image 620/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006161.jpg: 384x640 (no detections), 10.0ms
+image 621/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006162.jpg: 352x640 (no detections), 10.4ms
+image 622/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006178.jpg: 384x640 8 D00s, 10.6ms
+image 623/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006182.jpg: 352x640 (no detections), 10.4ms
+image 624/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006198.jpg: 352x640 (no detections), 10.0ms
+image 625/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006217.jpg: 384x640 3 D00s, 1 D10, 10.5ms
+image 626/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006251.jpg: 352x640 (no detections), 10.4ms
+image 627/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006262.jpg: 352x640 (no detections), 10.1ms
+image 628/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006300.jpg: 352x640 (no detections), 10.3ms
+image 629/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006303.jpg: 352x640 (no detections), 9.9ms
+image 630/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006305.jpg: 352x640 (no detections), 10.1ms
+image 631/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006313.jpg: 384x640 (no detections), 10.5ms
+image 632/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006332.jpg: 384x640 (no detections), 10.0ms
+image 633/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006345.jpg: 352x640 (no detections), 10.4ms
+image 634/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006360.jpg: 384x640 5 D00s, 10.4ms
+image 635/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006364.jpg: 352x640 (no detections), 10.4ms
+image 636/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006369.jpg: 384x640 (no detections), 10.5ms
+image 637/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006374.jpg: 352x640 (no detections), 10.7ms
+image 638/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006388.jpg: 384x640 (no detections), 10.7ms
+image 639/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006392.jpg: 384x640 5 D00s, 10.0ms
+image 640/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006418.jpg: 384x640 3 D00s, 10.0ms
+image 641/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006427.jpg: 384x640 (no detections), 10.0ms
+image 642/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006434.jpg: 384x640 (no detections), 10.0ms
+image 643/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006437.jpg: 352x640 (no detections), 10.4ms
+image 644/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006439.jpg: 384x640 3 D00s, 10.4ms
+image 645/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006441.jpg: 384x640 (no detections), 10.0ms
+image 646/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006456.jpg: 384x640 (no detections), 10.0ms
+image 647/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006465.jpg: 352x640 (no detections), 10.4ms
+image 648/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006468.jpg: 384x640 (no detections), 10.4ms
+image 649/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006484.jpg: 384x640 1 D10, 10.0ms
+image 650/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006495.jpg: 352x640 (no detections), 10.4ms
+image 651/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006498.jpg: 352x640 (no detections), 10.0ms
+image 652/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006506.jpg: 384x640 2 D00s, 11.2ms
+image 653/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006507.jpg: 384x640 1 D00, 3 D20s, 10.0ms
+image 654/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006517.jpg: 384x640 5 D00s, 12.7ms
+image 655/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006525.jpg: 384x640 (no detections), 10.0ms
+image 656/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006531.jpg: 352x640 (no detections), 10.4ms
+image 657/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006554.jpg: 384x640 2 D10s, 10.4ms
+image 658/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006564.jpg: 352x640 (no detections), 10.4ms
+image 659/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006569.jpg: 384x640 (no detections), 10.4ms
+image 660/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006573.jpg: 352x640 (no detections), 10.4ms
+image 661/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006576.jpg: 384x640 (no detections), 10.5ms
+image 662/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006582.jpg: 352x640 (no detections), 10.3ms
+image 663/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006612.jpg: 352x640 (no detections), 9.9ms
+image 664/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006624.jpg: 352x640 1 D00, 9.9ms
+image 665/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006625.jpg: 384x640 (no detections), 10.5ms
+image 666/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006626.jpg: 384x640 (no detections), 10.0ms
+image 667/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006638.jpg: 384x640 7 D00s, 10.0ms
+image 668/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006658.jpg: 384x640 13 D00s, 2 D10s, 10.1ms
+image 669/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006662.jpg: 384x640 (no detections), 10.0ms
+image 670/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006667.jpg: 352x640 (no detections), 10.4ms
+image 671/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006679.jpg: 384x640 (no detections), 10.4ms
+image 672/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006680.jpg: 384x640 3 D00s, 10.0ms
+image 673/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006688.jpg: 384x640 (no detections), 10.5ms
+image 674/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006690.jpg: 352x640 (no detections), 10.5ms
+image 675/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006699.jpg: 352x640 (no detections), 9.9ms
+image 676/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006716.jpg: 384x640 (no detections), 10.4ms
+image 677/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006751.jpg: 384x640 1 D00, 10.0ms
+image 678/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006773.jpg: 352x640 (no detections), 10.4ms
+image 679/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006776.jpg: 352x640 (no detections), 10.0ms
+image 680/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006782.jpg: 352x640 (no detections), 9.9ms
+image 681/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006792.jpg: 352x640 (no detections), 10.1ms
+image 682/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006797.jpg: 352x640 (no detections), 10.0ms
+image 683/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006800.jpg: 384x640 1 D00, 10.4ms
+image 684/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006816.jpg: 352x640 (no detections), 10.5ms
+image 685/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006839.jpg: 352x640 2 D00s, 10.0ms
+image 686/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006849.jpg: 352x640 1 D00, 9.9ms
+image 687/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006854.jpg: 352x640 1 D00, 10.0ms
+image 688/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006855.jpg: 352x640 (no detections), 10.0ms
+image 689/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006885.jpg: 384x640 (no detections), 10.5ms
+image 690/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006890.jpg: 384x640 (no detections), 10.0ms
+image 691/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006901.jpg: 352x640 (no detections), 10.4ms
+image 692/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006903.jpg: 352x640 (no detections), 10.2ms
+image 693/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006915.jpg: 384x640 (no detections), 10.7ms
+image 694/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006916.jpg: 352x640 (no detections), 11.1ms
+image 695/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006923.jpg: 384x640 10 D00s, 1 D20, 10.5ms
+image 696/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006925.jpg: 384x640 (no detections), 10.1ms
+image 697/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006937.jpg: 384x640 1 D00, 10.0ms
+image 698/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006941.jpg: 384x640 1 D20, 10.0ms
+image 699/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006944.jpg: 384x640 (no detections), 10.0ms
+image 700/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006955.jpg: 352x640 (no detections), 10.4ms
+image 701/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006956.jpg: 352x640 (no detections), 10.2ms
+image 702/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006972.jpg: 384x640 2 D00s, 1 D10, 10.8ms
+image 703/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006975.jpg: 384x640 (no detections), 10.0ms
+image 704/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006979.jpg: 352x640 (no detections), 10.4ms
+image 705/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006991.jpg: 352x640 (no detections), 10.0ms
+image 706/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006995.jpg: 352x640 (no detections), 9.9ms
+image 707/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_006998.jpg: 352x640 (no detections), 10.0ms
+image 708/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007035.jpg: 384x640 1 D40, 10.4ms
+image 709/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007046.jpg: 352x640 (no detections), 10.4ms
+image 710/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007048.jpg: 352x640 (no detections), 10.0ms
+image 711/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007054.jpg: 352x640 (no detections), 10.0ms
+image 712/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007069.jpg: 352x640 (no detections), 10.0ms
+image 713/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007070.jpg: 352x640 (no detections), 10.1ms
+image 714/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007090.jpg: 384x640 11 D00s, 10.5ms
+image 715/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007094.jpg: 384x640 3 D00s, 10.0ms
+image 716/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007107.jpg: 384x640 (no detections), 10.0ms
+image 717/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007116.jpg: 384x640 4 D00s, 10.0ms
+image 718/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007121.jpg: 384x640 1 D00, 10.0ms
+image 719/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007147.jpg: 352x640 (no detections), 10.4ms
+image 720/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007148.jpg: 384x640 8 D00s, 10.5ms
+image 721/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007152.jpg: 352x640 (no detections), 10.4ms
+image 722/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007155.jpg: 352x640 (no detections), 9.9ms
+image 723/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007162.jpg: 352x640 (no detections), 10.0ms
+image 724/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007168.jpg: 384x640 1 D00, 10.4ms
+image 725/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007176.jpg: 384x640 (no detections), 10.0ms
+image 726/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007178.jpg: 384x640 (no detections), 10.1ms
+image 727/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007192.jpg: 352x640 (no detections), 10.4ms
+image 728/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007207.jpg: 384x640 1 D20, 10.5ms
+image 729/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007224.jpg: 384x640 1 D10, 10.0ms
+image 730/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007226.jpg: 352x640 (no detections), 10.4ms
+image 731/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007238.jpg: 352x640 (no detections), 10.0ms
+image 732/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007242.jpg: 352x640 (no detections), 9.8ms
+image 733/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007267.jpg: 384x640 4 D00s, 10.4ms
+image 734/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007270.jpg: 384x640 2 D00s, 10.0ms
+image 735/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007273.jpg: 352x640 (no detections), 10.4ms
+image 736/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007276.jpg: 384x640 (no detections), 10.4ms
+image 737/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007285.jpg: 352x640 (no detections), 10.4ms
+image 738/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007303.jpg: 384x640 (no detections), 10.4ms
+image 739/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007310.jpg: 384x640 1 D10, 10.0ms
+image 740/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007311.jpg: 384x640 (no detections), 10.0ms
+image 741/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007342.jpg: 384x640 (no detections), 10.0ms
+image 742/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007343.jpg: 352x640 (no detections), 10.4ms
+image 743/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007365.jpg: 384x640 1 D10, 10.4ms
+image 744/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007370.jpg: 352x640 (no detections), 10.4ms
+image 745/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007379.jpg: 384x640 1 D00, 10.5ms
+image 746/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007381.jpg: 384x640 (no detections), 10.1ms
+image 747/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007392.jpg: 352x640 1 D00, 10.4ms
+image 748/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007396.jpg: 384x640 (no detections), 10.4ms
+image 749/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007408.jpg: 384x640 22 D00s, 5 D10s, 10.0ms
+image 750/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007418.jpg: 384x640 (no detections), 10.0ms
+image 751/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007419.jpg: 384x640 (no detections), 10.0ms
+image 752/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007430.jpg: 352x640 (no detections), 10.4ms
+image 753/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007437.jpg: 384x640 (no detections), 10.5ms
+image 754/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007451.jpg: 352x640 (no detections), 10.3ms
+image 755/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007461.jpg: 352x640 (no detections), 9.9ms
+image 756/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007477.jpg: 352x640 (no detections), 10.0ms
+image 757/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007492.jpg: 352x640 (no detections), 9.9ms
+image 758/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007506.jpg: 352x640 (no detections), 10.0ms
+image 759/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007511.jpg: 384x640 (no detections), 10.5ms
+image 760/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007524.jpg: 384x640 3 D00s, 1 D20, 10.0ms
+image 761/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007535.jpg: 384x640 1 D20, 10.0ms
+image 762/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007560.jpg: 384x640 (no detections), 10.0ms
+image 763/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007563.jpg: 384x640 (no detections), 10.0ms
+image 764/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007575.jpg: 384x640 (no detections), 10.0ms
+image 765/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007581.jpg: 352x640 (no detections), 10.4ms
+image 766/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007614.jpg: 352x640 (no detections), 9.9ms
+image 767/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007622.jpg: 384x640 4 D00s, 10.5ms
+image 768/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007627.jpg: 384x640 (no detections), 10.0ms
+image 769/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007629.jpg: 384x640 2 D00s, 10.0ms
+image 770/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007641.jpg: 384x640 1 D00, 10.0ms
+image 771/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007652.jpg: 352x640 (no detections), 10.4ms
+image 772/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007654.jpg: 352x640 (no detections), 9.9ms
+image 773/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007670.jpg: 352x640 (no detections), 10.0ms
+image 774/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007677.jpg: 352x640 (no detections), 9.9ms
+image 775/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007684.jpg: 384x640 (no detections), 10.5ms
+image 776/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007685.jpg: 352x640 (no detections), 10.4ms
+image 777/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007754.jpg: 352x640 (no detections), 10.1ms
+image 778/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007761.jpg: 384x640 (no detections), 10.4ms
+image 779/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007783.jpg: 384x640 (no detections), 10.0ms
+image 780/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007797.jpg: 384x640 4 D00s, 1 D10, 10.1ms
+image 781/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007816.jpg: 352x640 (no detections), 10.4ms
+image 782/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007834.jpg: 384x640 (no detections), 10.5ms
+image 783/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007836.jpg: 352x640 (no detections), 10.3ms
+image 784/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007848.jpg: 384x640 1 D00, 10.4ms
+image 785/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007852.jpg: 352x640 (no detections), 10.7ms
+image 786/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007853.jpg: 352x640 (no detections), 10.2ms
+image 787/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007857.jpg: 384x640 (no detections), 10.7ms
+image 788/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007861.jpg: 384x640 (no detections), 10.0ms
+image 789/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007866.jpg: 384x640 (no detections), 10.0ms
+image 790/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007871.jpg: 384x640 2 D00s, 10.0ms
+image 791/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007880.jpg: 352x640 (no detections), 10.4ms
+image 792/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007891.jpg: 384x640 (no detections), 10.4ms
+image 793/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007896.jpg: 352x640 (no detections), 10.3ms
+image 794/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007900.jpg: 352x640 (no detections), 9.9ms
+image 795/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007901.jpg: 352x640 (no detections), 10.0ms
+image 796/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007910.jpg: 352x640 (no detections), 10.0ms
+image 797/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007919.jpg: 384x640 5 D00s, 10.4ms
+image 798/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007922.jpg: 352x640 (no detections), 10.5ms
+image 799/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007934.jpg: 384x640 3 D00s, 10.5ms
+image 800/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007951.jpg: 384x640 1 D00, 10.1ms
+image 801/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007963.jpg: 352x640 (no detections), 10.4ms
+image 802/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007964.jpg: 384x640 3 D00s, 10.4ms
+image 803/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007972.jpg: 352x640 (no detections), 10.5ms
+image 804/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007974.jpg: 352x640 (no detections), 9.9ms
+image 805/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007979.jpg: 384x640 2 D00s, 10.5ms
+image 806/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_007990.jpg: 352x640 (no detections), 10.4ms
+image 807/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_008002.jpg: 352x640 (no detections), 10.0ms
+image 808/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_008006.jpg: 352x640 (no detections), 10.0ms
+image 809/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_008016.jpg: 352x640 (no detections), 10.3ms
+image 810/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_008041.jpg: 352x640 (no detections), 10.0ms
+image 811/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_008059.jpg: 352x640 (no detections), 10.0ms
+image 812/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_008072.jpg: 352x640 (no detections), 10.0ms
+image 813/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_008094.jpg: 352x640 (no detections), 10.0ms
+image 814/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_008111.jpg: 352x640 (no detections), 10.0ms
+image 815/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_008112.jpg: 352x640 (no detections), 10.0ms
+image 816/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_008142.jpg: 352x640 (no detections), 10.0ms
+image 817/817 /cluster/work/jfbjornl/miniprojecttdt17/VisualIntelligence/images/test/Norway_008145.jpg: 384x640 1 D00, 10.5ms
+Speed: 0.3ms pre-process, 10.3ms inference, 0.5ms NMS per image at shape (1, 3, 640, 640)
+Results saved to [1mruns/detect/yolo_road_damage5[0m
+260 labels saved to runs/detect/yolo_road_damage5/labels

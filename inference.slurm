@@ -3,12 +3,12 @@
 #SBATCH --partition=GPUQ
 #SBATCH --gres=gpu:A100m40:1
 #SBATCH --account=ie-idi
-#SBATCH --time=14:00:00
+#SBATCH --time=01:00:00
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=40000
 #SBATCH --job-name="yolov5 rdd"
-#SBATCH --output=test.out
+#SBATCH --output=inference.out
 #SBATCH --mail-user=jfbjornl@stud.ntnu.no
 #SBATCH --mail-type=ALL
 
@@ -42,4 +42,4 @@ source activate condaenv
 conda info
 
 # Run training
-cd yolov5 && python train.py --img 640 --cfg yolov5s.yaml --hyp hyp.scratch-low.yaml --batch 32 --epochs 20 --data road_damage_data.yaml --weights yolov5s.pt --workers 24 --name yolo_road_damage_detection
+cd yolov5 && python detect.py --source ../images/test/ --weights runs/train/yolo_road_damage_detection7/weights/best.pt --conf 0.25 --name yolo_road_damage --save-txt
