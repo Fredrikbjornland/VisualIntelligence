@@ -59,5 +59,10 @@ def normalzeAllImages():
             print(images[i])
             writePrediction(height, width, images[i][-17:], labels)
             j += 1
+        else:
+            emptyAnswer = images[i][-17:] + ",\n"
+            with open(file_name, 'a') as f:
+                f.write(emptyAnswer)
+
 
 normalzeAllImages()
