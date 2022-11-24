@@ -2,7 +2,7 @@ import cv2
 import os
 from tqdm import tqdm
 
-pathToPredictions = "yolov5/runs/detect/yolo_road_damage5/labels"
+pathToPredictions = "yolov5/runs/detect/yolo_road_damage7/labels"
 
 def getPredictions(fileName):
     with open(fileName, "r") as file:
@@ -19,7 +19,6 @@ file_name = "normalizedPredictions.txt"
 
 
 def normalizePrediction(height, width, label):
-    print(height, width)
     normalizedValues = label[1] * width, label[2] * height, label[3] * width, label[4] * height
     return [str(int(x)) for x in normalizedValues]
 
@@ -40,9 +39,10 @@ def clearOutputFile():
     with open(file_name, 'w') as f:
         pass
 
+
 def normalzeAllImages():
     clearOutputFile()
-    images = [os.path.join("images/test", x) for x in os.listdir("images/test") if x[-3:] == "jpg"]
+    images = [os.path.join("Norway/test/images", x) for x in os.listdir("Norway/test/images") if x[-3:] == "jpg"]
     predictions = [os.path.join(pathToPredictions, x) for x in os.listdir(pathToPredictions) if x[-3:] == "txt"]
     images.sort()
     predictions.sort()
@@ -56,7 +56,6 @@ def normalzeAllImages():
             height, width, depth = image_size
 
             labels = getPredictions(predictions[j])
-            print(images[i])
             writePrediction(height, width, images[i][-17:], labels)
             j += 1
         else:

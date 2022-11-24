@@ -42,4 +42,4 @@ source activate condaenv
 conda info
 
 # Run training
-cd yolov5 && python detect.py --source ../images/test/ --weights runs/train/yolo_road_damage_detection7/weights/best.pt --conf 0.25 --name yolo_road_damage --save-txt
+cd yolov5 && python detect.py --source ../Norway/test/images/ --weights runs/train/yolo_road_damage_detection7/weights/best.pt --conf 0.25 --name yolo_road_damage --save-txt
